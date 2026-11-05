@@ -1,0 +1,30 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: birdsong-myst-tutorial
+  title: "From Sound to Syllables: Measuring Birdsong Behaviour"
+  description: A short, interactive tutorial on turning raw zebra finch song recordings into syllable-level behavioural data, built with JupyterBook 2 and MyST.
+  keywords: [computational behaviour, birdsong, zebra finch, spectrogram, segmentation]
+  authors:
+    - name: Sheetal Jadhav
+      github: sheetal-jadhav
+  github: https://github.com/sheetal-jadhav/birdsong-myst-tutorial
+  license:
+    content: CC-BY-4.0
+    code: BSD-3-Clause
+  jupyter: true
+  bibliography:
+    - references.bib
+  abbreviations:
+    IOI: inter-onset interval
+    HVC: a premotor song nucleus in the songbird brain
+  toc:
+    - file: index.md
+    - title: Tutorials
+      children:
+        - file: tutorials/birdsong_segmentation.ipynb
+    - file: references.md
+site:
+  template: book-theme
+  options:
+    logo_text: Birdsong Tutorial
